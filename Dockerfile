@@ -9,4 +9,4 @@ RUN unzip /tmp/master.zip -d /opt && mv /opt/perl-pollenflug-catalyst-master /op
 
 EXPOSE 3000/tcp
 
-CMD /bin/bash
+CMD /opt/pollenflug/script/pollenflug_fastcgi.pl -l :3000 -n 2
